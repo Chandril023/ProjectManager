@@ -1,0 +1,93 @@
+.team-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+  gap: 20px; /* Adjust spacing between cards as needed */
+}
+.container-heading{
+  margin-top: 23px;
+  button{padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust padding to make the filter button larger */
+    font-size: 16px;
+    margin-right: 25px;}
+}
+.team-card {
+  width: 300px; /* Adjust width of each card */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.add-member-button{
+  margin-right: 20px;
+  
+}
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.front {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.front h3 {
+  margin-bottom: 10px;
+}
+
+.front ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.front ul li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+}
+
+.modal {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.team-cards-container-horizontal-scroll{
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding: 10px; /* Adjust padding as needed */
+}
+.team-cards-container-horizontal-scroll > * {
+  flex: 0 0 auto; /* Prevent flex items from growing */
+  margin-right: 10px; /* Add margin between flex items */
+}
+
+.error-message {
+    color: red;
+}

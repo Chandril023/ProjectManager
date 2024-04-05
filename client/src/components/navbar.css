@@ -1,0 +1,58 @@
+ /*navigation css*/
+ .logo1 {
+    margin-right: 50px;
+
+  }
+  .nav1-layout {
+   background: white;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 30px;
+   margin-right: 30px;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu-bar {
+    margin-top: 70px;
+    border-radius: 15px;
+    height: fit-content;
+    display: inline-flex;
+    border: black;
+    background-color: rgba(10, 7, 16, 0.982);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
+    align-items: center;
+    padding: 0 10px;
+    li {
+      border-color: rgb(255, 255, 255);
+      list-style: none;
+      color: rgb(255, 255, 255);
+      font-family: sans-serif;
+      font-weight: bold;
+      padding: 12px 16px;
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left:0;
+        height:100%;
+        width: 100%;
+        z-index:-1;
+        transition: .2s;
+        border-radius: 25px;
+      }
+        &:hover {
+          &::before {
+            background: linear-gradient(to bottom, #e1e1eee0, #e1e1eee0);
+              box-shadow: 0px 3px 20px 0px black;
+              transform: scale(1.2);
+          }
+          color: black;
+      }
+    }
+  }

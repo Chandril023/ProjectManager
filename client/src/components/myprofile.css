@@ -1,0 +1,61 @@
+/* Container */
+.my-profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* User Card */
+.my-profile-user-card {
+    width: 300px; /* Adjust the width of the user card */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Profile Form */
+.my-profile-form {
+    flex-grow: 1; /* Allow the form to grow to fill the remaining space */
+    padding: 40px; /* Increase padding to make the form larger */
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* User Avatar */
+.my-profile-user-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
+.my-profile-user-avatar img {
+    border-radius: 50%; /* Make the avatar round */
+    width: 100px; /* Adjust the avatar width */
+    height: 100px; /* Adjust the avatar height */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+/* User Info Sections */
+.my-profile-user-info {
+    margin-bottom: 20px;
+}
+
+/* Placeholder Styling */
+.my-profile-placeholder {
+    color: #bdbdbd; /* Adjust placeholder color */
+}
+
+/* Button */
+.my-profile-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.my-profile-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

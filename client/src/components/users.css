@@ -1,0 +1,235 @@
+.user-cards-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.user-card {
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: inline-block;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.user-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.user-card-attributes{
+  font-size: 12px;
+}
+.user-card img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.user-card p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+.pagination {
+  text-align: center;
+}
+
+.pagination button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* users.css */
+
+
+.search-filter-container input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px 20px; /* Adjust padding to make the search bar larger */
+  font-size: 16px;
+}
+
+.search-filter-container button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px; /* Adjust padding to make the filter button larger */
+  font-size: 16px;
+}
+
+
+/* Filter Popup Styles */
+
+.filter-popup div {
+  margin-bottom: 10px;
+}
+
+.filter-popup label {
+  margin-right: 5px;
+}
+
+.filter-popup select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-popup button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align to the right */
+  margin-right: 20px; /* Add margin for spacing */
+  margin-bottom: 20px;
+}
+.container-heading{
+  display: flex;
+  justify-content: space-between;
+}
+/* Adjust styles for search input and filter button as needed */
+.container-name{
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 20px;
+  button{
+    padding: 10px 20px; /* Adjust padding to make the filter button larger */
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+/* Filter Popup Styles */
+/* Add styles to position the filter popup on the right side */
+.filter-popup {
+  position: absolute;
+  top: 40px; /* Adjust as needed */
+  right: 20px; /* Position on the right side */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.search-bar {
+  padding: 10px 20px; /* Adjust padding to make the search bar larger */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Style for large filter button */
+.filter-button {
+  padding: 10px 20px; /* Adjust padding to make the filter button larger */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+
+
+/* Add CSS to show filter popup when it's open */
+.filter-popup.active {
+  display: block;
+}
+/* Modal container */
+.add-user-button{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.modal-content{
+  background-color: #ffffff;
+ margin-left: 10px;
+ display: grid;
+ margin-right: 10px;
+ font-weight: bold;
+  place-items: left; 
+  margin-bottom: 20px;
+ button{padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+}
+
+.modal-content .form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.modal-content label {
+  text-align: left; /* Align label text at the center */
+}
+
+.modal-content input,select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Set the width to 100% of the parent container */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-size: 16px;
+}
+.user-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+}
